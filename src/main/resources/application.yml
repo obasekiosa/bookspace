@@ -1,6 +1,6 @@
 ## DO NOT COMMIT WITH CREDENTIALS --DANGER!!!!
 spring:
-  application.name: bookspace-data-loader
+  application.name: bookspace
 
   security:
     oauth2:
