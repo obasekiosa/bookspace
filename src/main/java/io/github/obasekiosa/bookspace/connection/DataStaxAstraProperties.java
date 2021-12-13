@@ -1,4 +1,4 @@
-package com.github.obasekiosa.bookspacedataloader.connection;
+package io.github.obasekiosa.bookspace.connection;
 
 import java.io.File;
 
