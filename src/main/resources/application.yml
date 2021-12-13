@@ -1,4 +1,7 @@
+## DO NOT COMMIT WITH CREDENTIALS --DANGER!!!!
 spring:
+  application.name: bookspace-data-loader
+
   security:
     oauth2:
       client:
@@ -6,3 +9,27 @@ spring:
           github:
             client-id: <clientID>
             client-secret: <clientSecret>
+  
+  main:
+    allow-circular-references: true
+
+  data:
+    cassandra:
+      keyspace-name: main
+      username: USERNAME
+      password: PASSWORD
+      schema-action: create-if-not-exists
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: ID
+  region: REGION
+  keypspace: main
+  application.token: APP_TOKEN
