@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SpringGitHubLoginApplication {
+public class BookspaceApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringGitHubLoginApplication.class, args);
+		SpringApplication.run(BookspaceApp.class, args);
 	}
 
 	@RequestMapping("/user")
